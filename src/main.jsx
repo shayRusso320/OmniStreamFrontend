@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { Amplify } from 'aws-amplify'
 import config from './amplifyconfiguration'
 import App from './App'
-import './index.css'
+import '../index.css'
 
 Amplify.configure(config)
 
