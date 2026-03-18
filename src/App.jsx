@@ -40,7 +40,7 @@ export default function App() {
           'Authorization': `Bearer ${token}`,
           'Content-Type':  'application/json',
         },
-        body: JSON.stringify({ topic: topic.trim() }),
+        body: JSON.stringify({ "topic": topic.trim() }),
       })
 
       if (!res.ok) throw new Error(`Request failed: ${res.status}`)
